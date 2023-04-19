@@ -1,0 +1,21 @@
+<h4 class="text-center">Cadastre-se e aproveite sua rede de amigos</h4>
+
+<form class="form mt-4" #loginForm="ngForm">
+    <div class="form-group">
+        <input placeholder="e-mail" class="form-control" />
+    </div>
+    <br>
+    <div class="form-group">
+        <input placeholder="Nome completo" class="form-control" />
+    </div>
+    <br>
+    <div class="form-group">
+        <input placeholder="Usuário" class="form-control" />
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="password" placeholder="Senha" class="form-control" />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary btn-block " [disabled]="loginForm.invalid">Cadastro</button>
+</form>
